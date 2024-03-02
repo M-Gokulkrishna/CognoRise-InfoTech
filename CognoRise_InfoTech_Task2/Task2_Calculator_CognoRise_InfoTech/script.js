@@ -136,7 +136,7 @@ function Eval_Add_Sub(){
 }
 function Display_Output(){
     Input_Field.value = Main_Object.Output.toFixed(2);
-    if(!Main_Object.Output){
+    if(!Main_Object.Output && Main_Object.Output !== 0){
         Input_Field.value = 'Enter Valid Data';
     }
 }
